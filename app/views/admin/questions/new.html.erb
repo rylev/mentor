@@ -1,0 +1,7 @@
+<h4> Create a Question! </h4>
+
+<%= form_tag(admin_questions_path, method: "post") do %>
+  <%= label_tag(:text, "Text") %>
+  <%= text_field_tag(:text) %>
+  <%= submit_tag("Create!") %>
+<% end %>
